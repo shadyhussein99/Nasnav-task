@@ -1,15 +1,13 @@
-import { useState } from "react"
 
-function ProductInfo() {
 
-    const [quantity, setQuantity] = useState(0)
+function ProductInfo(props) {
 
     const increase = () => {
-        setQuantity(quantity + 1)
+        props.setQuantity(props.quantity + 1)
     }
 
     const decrease = () => {
-        quantity > 0 ? setQuantity(quantity - 1) : setQuantity(0)
+        props.quantity > 0 ? props.setQuantity(props.quantity - 1) : props.setQuantity(0)
     }
 
     return <section>
@@ -23,7 +21,7 @@ function ProductInfo() {
                     <i className="fa-solid fa-star"></i>
                     <i className="fa-solid fa-star"></i>
                     <i className="fa-solid fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
+                    <i className="fa-regular fa-star"></i>
                 </span>
                 <span>4.9 of 5</span>
                 <span>22 Rates</span>
@@ -59,11 +57,11 @@ function ProductInfo() {
             <p>Quantity</p>
             <div>
                 <button onClick={decrease}>-</button>
-                <span>{quantity}</span>
+                <span>{props.quantity}</span>
                 <button onClick={increase}>+</button>
             </div>
             <div>
-                <button>Add To Cart</button>
+                <button onClick={props.addToCartClick}>Add To Cart</button>
                 <button>Pickup From Store</button>
             </div>
         </section>
