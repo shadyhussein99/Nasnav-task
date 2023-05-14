@@ -1,3 +1,80 @@
 body {
   margin: 0;
+}
+
+.first-nav-section {
+  background-color: #fff100;
+}
+.first-nav-section div {
+  width: 1200px;
+  margin: auto;
+  display: flex;
+}
+.first-nav-section div .logo-div {
+  align-items: center;
+  width: 70%;
+}
+.first-nav-section div .logo-div .logo-h1 {
+  font-size: 2rem;
+  margin: 5% 0 5% 3%;
+}
+.first-nav-section div .offers-div span {
+  margin: 0 8px;
+}
+.first-nav-section div .offers-div .offers-link {
+  margin-right: 8px;
+  color: black;
+  font-weight: 700;
+}
+.first-nav-section div .services-div {
+  display: flex;
+  justify-content: end;
+}
+.first-nav-section div .services-div p {
+  margin-left: 30px;
+}
+.first-nav-section div .services-div p span {
+  margin-left: 5px;
+}
+
+.second-nav-section {
+  background-color: white;
+}
+.second-nav-section div {
+  width: 1200px;
+  margin: auto;
+  display: flex;
+}
+.second-nav-section div input {
+  width: 60%;
+  border-radius: 25px;
+  padding-left: 2%;
+  margin: 15px 0;
+}
+.second-nav-section div img {
+  margin: 10px 0;
+  width: 60px;
+  height: 60px;
+  -o-object-fit: fill;
+     object-fit: fill;
+  margin-left: 20%;
+}
+.second-nav-section div .user-info-div {
+  justify-content: end;
+}
+.second-nav-section div .user-info-div p {
+  margin-left: 30px;
+}
+.second-nav-section div .user-info-div p .user-info-description {
+  margin-left: 5px;
+}
+.second-nav-section div .user-info-div p.cart-p {
+  position: relative;
+}
+.second-nav-section div .user-info-div p.cart-p span.cart-number {
+  background-color: #fff100;
+  border-radius: 50%;
+  padding: 1px;
+  position: absolute;
+  left: 20px;
 }/*# sourceMappingURL=main.css.map */

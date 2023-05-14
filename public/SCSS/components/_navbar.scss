@@ -1,0 +1,102 @@
+// variables
+@use "../variables" as *;
+
+
+// First section in Navbar
+.first-nav-section {
+    background-color: $secondary;
+
+    div {
+        width: $base-width;
+        margin: auto;
+        display: flex;
+
+        .logo-div {
+            align-items: center;
+            width: 70%;
+
+            .logo-h1 {
+                font-size: 2rem;
+                margin: 5% 0 5% 3%;
+            }
+        }
+
+        .offers-div {
+
+            span {
+                margin: 0 8px;
+            }
+
+            .offers-link {
+                margin-right: 8px;
+                color: black;
+                font-weight: 700;
+            }
+        }
+
+        .services-div {
+            display: flex;
+            justify-content: end;
+
+            p {
+                margin-left: 30px;
+
+                span {
+                    margin-left: 5px;
+                }
+            }
+        }
+    }
+
+}
+
+
+// Second section in Navbar
+.second-nav-section {
+    background-color: white;
+
+    div {
+        width: $base-width;
+        margin: auto;
+        display: flex;
+
+        input {
+            width: 60%;
+            border-radius: 25px;
+            padding-left: 2%;
+            margin: 15px 0;
+        }
+
+        img {
+            margin: 10px 0;
+            width: 60px;
+            height: 60px;
+            object-fit: fill;
+            margin-left: 20%;
+        }
+
+        .user-info-div {
+            justify-content: end;
+
+            p {
+                margin-left: 30px;
+
+                .user-info-description {
+                    margin-left: 5px;
+                }
+            }
+
+            p.cart-p {
+                position: relative;
+
+                span.cart-number{
+                    background-color: $secondary;
+                    border-radius: 50%;
+                    padding: 1px;
+                    position: absolute;
+                    left: 20px;
+                }
+            }
+        }
+    }
+}
