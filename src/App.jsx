@@ -19,7 +19,7 @@ function App() {
     <>
       <Navbar 
         cartNumber={cartNumber}
-        showingCart={showingCart}
+        setShowingCart={setShowingCart}
       />
       <ProductImages />
       <ProductInfo 
@@ -31,7 +31,7 @@ function App() {
       {showingCart && <MyCart 
         cartNumber={cartNumber}
         setCartNumber={setCartNumber}
-        showingCart={showingCart}
+        setShowingCart={setShowingCart}
       />}
     </>
   )

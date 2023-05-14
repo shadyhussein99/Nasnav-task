@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 function MyCart(props) {
 
     const onClose = () => {
-        props.showingCart(false)
+        props.setShowingCart(false)
     }
 
     const removeClick = () => {
@@ -12,13 +12,13 @@ function MyCart(props) {
 
     return ReactDOM.createPortal(
         props.cartNumber ? <main>
-            <button onClick={onClose}>Close</button>
+            <i onClick={onClose} className="fa-solid fa-x"></i>
             <section>
                 <h1>My Cart</h1>
                 <p>Cart Summary</p>
                 <section>
                     <div>
-                        <img src="../images/dynamicImage1.PNG" alt="product image" />
+                        <img src="../src/images/dynamicImage1.PNG" alt="product image" />
                     </div>
                     <div>
                         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
@@ -29,7 +29,7 @@ function MyCart(props) {
                         </div>
                     </div>
                 </section>
-                <p>Total: {`9,999 * ${props.cartNumber}`} LE</p>
+                <p>Total: {props.cartNumber * 9999} LE</p>
                 <div>
                     <button>Review Cart</button>
                     <button>Complete Checkout</button>
@@ -37,7 +37,7 @@ function MyCart(props) {
             </section>
         </main> :
             <main>
-                <button onClick={onClose}>Close</button>
+                <i onClick={onClose} className="fa-solid fa-x"></i>
                 <section>
                     <h1>My Cart</h1>
                     <p>Cart Summary</p>

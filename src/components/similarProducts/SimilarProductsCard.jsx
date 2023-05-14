@@ -14,7 +14,7 @@ function SimilarProducts(props) {
                 <i className="fa-solid fa-star"></i>
                 <i className="fa-solid fa-star"></i>
                 <i className="fa-solid fa-star"></i>
-                <i class="fa-regular fa-star"></i>
+                <i className="fa-regular fa-star"></i>
             </span>
             <span>4.2 of 5</span>
         </div>

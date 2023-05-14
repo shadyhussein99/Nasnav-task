@@ -6,7 +6,7 @@ function Navbar(props) {
     const [inputChange, setInputChange] = useState("")
 
     const showCart = () => {
-        props.showingCart(true)
+        props.setShowingCart(true)
     }
 
     return <nav>
