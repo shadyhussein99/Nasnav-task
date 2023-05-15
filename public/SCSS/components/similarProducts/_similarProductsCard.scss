@@ -1,0 +1,49 @@
+// Variables
+@import '../../_variables.scss';
+
+.card-section {
+    border: 1px solid #ececec;
+    border-radius: 10px;
+    margin: 30px 0;
+
+    .image-div {
+        display: flex;
+        justify-content: center;
+    }
+
+    p {
+        text-align: center;
+    }
+
+    .cost-div {
+        display: flex;
+        justify-content: space-between;
+        margin: 15px 20px;
+
+        span {
+            color: $primary;
+            font-size: large;
+            font-weight: bold;
+
+            .LE {
+                font-size: initial;
+                font-weight: initial;
+            }
+        }
+
+        img {
+            width: 15%;
+        }
+    }
+
+    .rate-div {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 5%;
+
+        .icon-span {
+            color: orange;
+            margin-right: 5%;
+        }
+    }
+}

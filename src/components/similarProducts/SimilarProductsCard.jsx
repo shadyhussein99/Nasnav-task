@@ -1,15 +1,17 @@
 
 
-function SimilarProducts(props) {
-    return <section>
-        <img src={`/images/${props.similarProductsImg}.PNG`} alt="clothes pic" />
+function SimilarProductsCard(props) {
+    return <section className="card-section">
+        <div className="image-div">
+            <img src={`/images/${props.similarProductsImg}.PNG`} alt="clothes pic" />
+        </div>
         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
-        <div>
-            <span>9,999 <span>LE</span></span>
+        <div className="cost-div">
+            <span>9,999 <span className="LE">LE</span></span>
             <img src="/images/reebok.png" alt="brand logo" />
         </div>
-        <div>
-            <span>
+        <div className="rate-div">
+            <span className="icon-span">
                 <i className="fa-solid fa-star"></i>
                 <i className="fa-solid fa-star"></i>
                 <i className="fa-solid fa-star"></i>
@@ -22,4 +24,4 @@ function SimilarProducts(props) {
     </section>
 }
 
-export default SimilarProducts
+export default SimilarProductsCard

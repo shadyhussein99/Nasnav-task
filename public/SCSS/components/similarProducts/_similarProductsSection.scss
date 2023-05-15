@@ -1,0 +1,22 @@
+// Variables
+@import '../../_variables.scss';
+
+.similar-products-section {
+    width: $base_width;
+    margin: 0 auto 50px;
+
+    h2 {
+        color: $primary;
+    }
+
+    .similar-products-p {
+        color: gray;
+        font-size: large;
+        font-weight: initial;
+    }
+
+    .similar-products-slide {
+        display: flex;
+        justify-content: center;
+    }
+}

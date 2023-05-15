@@ -18,7 +18,6 @@ function ProductImages() {
             <img className="main-image" src={`../src/images/${mainImage}.PNG`} alt="product image" />
         </div>
 
-
             <Swiper
                 modules={[Navigation, Autoplay, A11y]}
                 spaceBetween={10}

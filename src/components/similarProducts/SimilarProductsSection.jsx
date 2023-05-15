@@ -8,20 +8,20 @@ function SimilarProductsSection() {
 
     const [similarProductsImages, setSimilarProductImages] = useState(["staticImage1", "staticImage2", "staticImage3", "staticImage4", "staticImage5", "staticImage6"])
 
-    return <section>
+    return <section className="similar-products-section">
         <h2>Similar Products</h2>
-        <p>You may like these products also</p>
+        <p className="similar-products-p">You may like these products also</p>
 
         <Swiper
             modules={[Navigation, Scrollbar, A11y]}
-            spaceBetween={40}
+            spaceBetween={10}
             slidesPerView={4}
             navigation
             scrollbar={{ draggable: true }}
         >
             {similarProductsImages.map((value, index) => {
-                return <SwiperSlide key={index}>
-                    <SimilarProductsCard
+                return <SwiperSlide className="similar-products-slide" key={index}>
+                    <SimilarProductsCard                    
                         similarProductsImg={value}
                     />
                 </SwiperSlide>

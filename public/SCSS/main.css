@@ -295,4 +295,60 @@ span {
 }
 .product-info-section .clothes-purchase .purchase-div .purchase-button:hover {
   background-color: #FFF53F;
+}
+
+.card-section {
+  border: 1px solid #ececec;
+  border-radius: 10px;
+  margin: 30px 0;
+}
+.card-section .image-div {
+  display: flex;
+  justify-content: center;
+}
+.card-section p {
+  text-align: center;
+}
+.card-section .cost-div {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 20px;
+}
+.card-section .cost-div span {
+  color: #542e90;
+  font-size: large;
+  font-weight: bold;
+}
+.card-section .cost-div span .LE {
+  font-size: initial;
+  font-weight: initial;
+}
+.card-section .cost-div img {
+  width: 15%;
+}
+.card-section .rate-div {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5%;
+}
+.card-section .rate-div .icon-span {
+  color: orange;
+  margin-right: 5%;
+}
+
+.similar-products-section {
+  width: 1200px;
+  margin: 0 auto 50px;
+}
+.similar-products-section h2 {
+  color: #542e90;
+}
+.similar-products-section .similar-products-p {
+  color: gray;
+  font-size: large;
+  font-weight: initial;
+}
+.similar-products-section .similar-products-slide {
+  display: flex;
+  justify-content: center;
 }/*# sourceMappingURL=main.css.map */
