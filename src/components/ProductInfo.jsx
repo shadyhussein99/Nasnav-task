@@ -27,16 +27,16 @@ function ProductInfo(props) {
                 <span className="rates-number">22 Rates</span>
             </div>
             <div className="cost-div">
-                <span className="discount-cost">9,999 <span>LE</span></span>
+                <span className="discount-cost">9,999 <span className="LE">LE</span></span>
                 <span className="actual-cost">9,999 LE</span>
-                <span>30% Off</span>
+                <span className="discount-percent">30% Off</span>
             </div>
         </section>
         <hr />
 
         <section className="clothes-size">
-            <p>Size</p>
-            <div>
+            <p className="size-p">Size</p>
+            <div className="sizes-div">
                 <span>Small</span>
                 <span>Medium</span>
                 <span>Large</span>
@@ -47,22 +47,22 @@ function ProductInfo(props) {
         <hr />
 
         <section className="clothes-color">
-            <p>Color</p>
-            <img src="../src/images/dynamicImage1.PNG" alt="clothes color" />
-            <img src="../src/images/dynamicImage5.PNG" alt="clothes color" />
+            <p className="color-p">Color</p>
+                <img className="color-img" src="../src/images/dynamicImage1.PNG" alt="clothes color" />
+                <img className="color-img" src="../src/images/dynamicImage5.PNG" alt="clothes color" />
         </section>
         <hr />
 
         <section className="clothes-purchase">
-            <p>Quantity</p>
-            <div>
+            <p className="quantity-p">Quantity</p>
+            <div className="quantity-div">
                 <button onClick={decrease}>-</button>
                 <span>{props.quantity}</span>
                 <button onClick={increase}>+</button>
             </div>
-            <div>
-                <button onClick={props.addToCartClick}>Add To Cart</button>
-                <button>Pickup From Store</button>
+            <div className="purchase-div">
+                <button className="cart-button" onClick={props.addToCartClick}>Add To Cart</button>
+                <button className="purchase-button">Pickup From Store</button>
             </div>
         </section>
     </section>

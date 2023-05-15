@@ -65,6 +65,7 @@ span {
   position: relative;
 }
 .second-nav-section div input {
+  border: 2px solid #ececec;
   font-size: large;
   width: 60%;
   border-radius: 25px;
@@ -150,6 +151,8 @@ span {
 }
 .product-images-section .image-div img {
   width: 80%;
+  -o-object-fit: contain;
+     object-fit: contain;
   margin-bottom: 4%;
 }
 .product-images-section .swiper-slide {
@@ -187,6 +190,109 @@ span {
 .product-info-section .clothes-information .rate-div .rates-number {
   color: gray;
 }
+.product-info-section .clothes-information .cost-div span {
+  margin-right: 3%;
+}
 .product-info-section .clothes-information .cost-div .discount-cost {
   color: #542e90;
+  font-size: x-large;
+  font-weight: bold;
+}
+.product-info-section .clothes-information .cost-div .discount-cost .LE {
+  font-size: initial;
+  font-weight: 500;
+  margin-right: initial;
+}
+.product-info-section .clothes-information .cost-div .actual-cost {
+  font-size: small;
+  color: gray;
+  text-decoration: line-through;
+}
+.product-info-section .clothes-information .cost-div .discount-percent {
+  font-size: small;
+  background-color: #fff100;
+  padding: 0.3%;
+}
+.product-info-section .clothes-size .size-p {
+  font-weight: bold;
+}
+.product-info-section .clothes-size .sizes-div {
+  color: #542e90;
+  display: flex;
+}
+.product-info-section .clothes-size .sizes-div span {
+  font-size: small;
+  margin-right: 3%;
+  cursor: pointer;
+  text-align: center;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  border: 2px solid #ececec;
+  border-radius: 50%;
+}
+.product-info-section .clothes-size .sizes-div span:hover {
+  background-color: #ececec;
+}
+.product-info-section .clothes-color .color-p {
+  font-weight: bold;
+}
+.product-info-section .clothes-color .color-img {
+  width: 70px;
+  border: 1px solid #ececec;
+  border-radius: 50%;
+  margin-right: 3%;
+  cursor: pointer;
+}
+.product-info-section .clothes-color .color-img:hover {
+  border-color: #542e90;
+}
+.product-info-section .clothes-purchase .quantity-p {
+  font-weight: bold;
+}
+.product-info-section .clothes-purchase .quantity-div {
+  width: 200px;
+  background-color: #ececec;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  margin-bottom: 5%;
+}
+.product-info-section .clothes-purchase .quantity-div button {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 0;
+  background-color: #fff100;
+  font-weight: bold;
+}
+.product-info-section .clothes-purchase .quantity-div span {
+  color: #542e90;
+  font-weight: bold;
+}
+.product-info-section .clothes-purchase .purchase-div {
+  font-weight: bold;
+}
+.product-info-section .clothes-purchase .purchase-div button {
+  font-weight: 600;
+  width: 30%;
+  border: 0;
+  border-radius: 25px;
+  padding: 1.5% 0;
+  margin-right: 3%;
+}
+.product-info-section .clothes-purchase .purchase-div .cart-button {
+  color: white;
+  background-color: #542e90;
+}
+.product-info-section .clothes-purchase .purchase-div .cart-button:hover {
+  background-color: #6A42AB;
+}
+.product-info-section .clothes-purchase .purchase-div .purchase-button {
+  background-color: #fff100;
+}
+.product-info-section .clothes-purchase .purchase-div .purchase-button:hover {
+  background-color: #FFF53F;
 }/*# sourceMappingURL=main.css.map */

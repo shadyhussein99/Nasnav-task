@@ -39,8 +39,139 @@
 
         .cost-div {
 
+            span {
+                margin-right: 3%;
+            }
+
             .discount-cost {
                 color: $primary;
+                font-size: x-large;
+                font-weight: bold;
+
+                .LE {
+                    font-size: initial;
+                    font-weight: 500;
+                    margin-right: initial;
+                }
+            }
+
+            .actual-cost {
+                font-size: small;
+                color: gray;
+                text-decoration: line-through;
+            }
+
+            .discount-percent {
+                font-size: small;
+                background-color: $secondary;
+                padding: 0.3%;
+            }
+        }
+    }
+
+    .clothes-size {
+
+        .size-p {
+            font-weight: bold;
+        }
+
+        .sizes-div {
+            color: $primary;
+            display: flex;
+
+            span {
+                font-size: small;
+                margin-right: 3%;
+                cursor: pointer;
+                text-align: center;
+                width: 60px;
+                height: 60px;
+                line-height: 60px;
+                border: 2px solid #ececec;
+                border-radius: 50%;
+            }
+
+            span:hover {
+                background-color: #ececec;
+            }
+        }
+    }
+
+    .clothes-color {
+
+        .color-p {
+            font-weight: bold;
+        }
+
+        .color-img {
+            width: 70px;
+            border: 1px solid #ececec;
+            border-radius: 50%;
+            margin-right: 3%;
+            cursor: pointer;
+        }
+
+        .color-img:hover {
+            border-color: $primary;
+        }
+    }
+
+    .clothes-purchase {
+
+        .quantity-p {
+            font-weight: bold;
+        }
+
+        .quantity-div {
+            width: 200px;
+            background-color: #ececec;
+            display: flex;
+            justify-content: space-between;
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 25px;
+            margin-bottom: 5%;
+
+            button {
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                border: 0;
+                background-color: $secondary;
+                font-weight: bold;
+            }
+
+            span {
+                color: $primary;
+                font-weight: bold;
+            }
+        }
+
+        .purchase-div {
+            font-weight: bold;
+
+            button {
+                font-weight: 600;
+                width: 30%;
+                border: 0;
+                border-radius: 25px;
+                padding: 1.5% 0;
+                margin-right: 3%;
+            }
+            
+            .cart-button {
+                color: white;;
+                background-color: $primary;
+            }
+            .cart-button:hover {
+                background-color: #6A42AB;
+            }
+
+            .purchase-button {
+                background-color: $secondary;
+            }
+            .purchase-button:hover {
+                background-color: #FFF53F;
             }
         }
     }
