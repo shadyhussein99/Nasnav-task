@@ -147,8 +147,7 @@
             }
         }
 
-        .purchase-div {
-            font-weight: bold;
+        .purchase-div {           
 
             button {
                 font-weight: 600;
@@ -158,11 +157,12 @@
                 padding: 1.5% 0;
                 margin-right: 3%;
             }
-            
+
             .cart-button {
-                color: white;;
+                color: white;
                 background-color: $primary;
             }
+
             .cart-button:hover {
                 background-color: #6A42AB;
             }
@@ -170,8 +170,25 @@
             .purchase-button {
                 background-color: $secondary;
             }
+
             .purchase-button:hover {
                 background-color: #FFF53F;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 1270px) {
+    .product-info-section {
+        
+        .clothes-purchase {
+
+            .purchase-div {
+               
+                button {
+                    width: 40%;
+                }
             }
         }
     }

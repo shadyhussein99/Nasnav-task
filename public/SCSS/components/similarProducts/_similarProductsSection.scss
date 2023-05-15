@@ -2,7 +2,7 @@
 @import '../../_variables.scss';
 
 .similar-products-section {
-    width: $base_width;
+    width: $large-screens-width;
     margin: 0 auto 50px;
 
     h2 {
@@ -18,5 +18,12 @@
     .similar-products-slide {
         display: flex;
         justify-content: center;
+    }
+}
+
+
+@media (max-width: 1270px) {
+    .similar-products-section {
+        width: $medium-screens-width;
     }
 }

@@ -15,13 +15,20 @@ function SimilarProductsSection() {
         <Swiper
             modules={[Navigation, Scrollbar, A11y]}
             spaceBetween={10}
-            slidesPerView={4}
+            breakpoints={{
+                0: {
+                    slidesPerView: 3,
+                },
+                1270: {
+                    slidesPerView: 4,
+                },
+            }}
             navigation
             scrollbar={{ draggable: true }}
         >
             {similarProductsImages.map((value, index) => {
                 return <SwiperSlide className="similar-products-slide" key={index}>
-                    <SimilarProductsCard                    
+                    <SimilarProductsCard
                         similarProductsImg={value}
                     />
                 </SwiperSlide>

@@ -21,7 +21,7 @@ function App() {
         cartNumber={cartNumber}
         setShowingCart={setShowingCart}
       />
-      <section className="row product-section">          {/* Using Bootstrap Grid System */}
+      <section className="row product-section">      {/* Using Bootstrap Grid System */}
         <section className="col-lg-6">
           <ProductImages />
         </section>

@@ -1,0 +1,125 @@
+// variables
+@use "../variables" as *;
+
+main {
+    position: fixed;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    width: 450px;
+    padding: 30px 30px;
+    background-color: #ececec;
+    box-shadow: 30px 30px 30px 30px #E9E8E8;
+
+    .icon-div {
+        display: flex;
+        justify-content: end;
+
+        i {
+            cursor: pointer;
+        }
+    }
+
+    .cart-section {
+
+        h1 {
+            color: $primary;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .cart-summary-p {
+            font-size: large;
+            font-weight: bold;
+        }
+
+        .cart-info {
+            border: 1px solid white;
+            border-radius: 15px;
+            padding: 7px;
+            margin-bottom: 20px;
+
+            .image-div {
+                display: flex;
+                align-items: center;
+
+                .cart-info-image {
+                    width: 100px;
+                    height: 80px;
+                    object-fit: contain;
+                }
+            }
+
+            .cart-info-div {
+
+                .cart-info-description {
+                    margin-bottom: 8px;
+                }
+
+                .cart-info-quantity {
+                    font-size: small;
+                }
+
+                div {
+                    display: flex;
+                    justify-content: space-between;
+
+                    span {
+                        color: $primary;
+                        font-size: large;
+                        font-weight: 700;
+
+                        .LE {
+                            font-size: initial;
+                            font-weight: initial;
+                        }
+                    }
+
+                    button {
+                        font-size: small;
+                        font-weight: 600;
+                        background-color: $secondary;
+                        padding: 2px 15px;
+                        border: none;
+                        border-radius: 25px;
+                    }
+                }
+            }
+        }
+
+        .total-money {
+            text-align: center;
+            font-size: large;
+            font-weight: bold;
+        }
+
+        .buttons-div {
+            display: flex;
+            justify-content: space-between;
+
+            button {
+                font-size: small;
+                font-weight: 600;
+                width: 180px;
+                padding: 12px 15px;
+                border: none;
+                border-radius: 25px;
+            }
+
+            .review-button {
+                background-color: $secondary;
+            }
+
+            .checkout-button {
+                color: white;
+                background-color: $primary;
+            }
+        }
+
+        .no-items-p {            /* The paragraph appears when cart is empty */
+            text-align: center;
+            margin-top: 40px;
+        }
+    }
+}

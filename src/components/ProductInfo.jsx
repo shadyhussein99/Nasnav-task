@@ -1,5 +1,4 @@
 
-
 function ProductInfo(props) {
 
     const increase = () => {

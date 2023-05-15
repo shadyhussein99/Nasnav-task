@@ -12,36 +12,40 @@ function MyCart(props) {
 
     return ReactDOM.createPortal(
         props.cartNumber ? <main>
-            <i onClick={onClose} className="fa-solid fa-x"></i>
-            <section>
+            <div className="icon-div">
+                <i onClick={onClose} className="fa-solid fa-x"></i>
+            </div>
+            <section className='cart-section'>
                 <h1>My Cart</h1>
-                <p>Cart Summary</p>
-                <section>
-                    <div>
-                        <img src="../src/images/dynamicImage1.PNG" alt="product image" />
+                <p className='cart-summary-p'>Cart Summary</p>
+                <section className='row cart-info'>
+                    <div className='col-4 image-div'>
+                        <img className=' cart-info-image' src="../src/images/dynamicImage1.PNG" alt="product image" />
                     </div>
-                    <div>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
-                        <p>Quantity: {props.cartNumber}</p>
+                    <div className='col-8 cart-info-div'>
+                        <p className='cart-info-description'>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+                        <p className='cart-info-quantity'>Quantity: {props.cartNumber}</p>
                         <div>
-                            <span>9,999 <span>LE</span></span>
+                            <span>9,999 <span className='LE'>LE</span></span>
                             <button onClick={removeClick}>Remove</button>
                         </div>
                     </div>
                 </section>
-                <p>Total: {props.cartNumber * 9999} LE</p>
-                <div>
-                    <button>Review Cart</button>
-                    <button>Complete Checkout</button>
+                <p className='total-money'>Total: {props.cartNumber * 9999} LE</p>
+                <div className='buttons-div'>
+                    <button className='review-button'>Review Cart</button>
+                    <button className='checkout-button'>Complete Checkout</button>
                 </div>
             </section>
         </main> :
             <main>
-                <i onClick={onClose} className="fa-solid fa-x"></i>
-                <section>
+                <div className="icon-div">
+                    <i onClick={onClose} className="fa-solid fa-x"></i>
+                </div>
+                <section className='cart-section'>
                     <h1>My Cart</h1>
-                    <p>Cart Summary</p>
-                    <p>You have no items yet..</p>
+                    <p className='cart-summary-p'>Cart Summary</p>
+                    <p className='no-items-p'>You have no items yet..</p>
                 </section>
             </main>,
         document.getElementById('root')

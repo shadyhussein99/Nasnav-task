@@ -7,7 +7,7 @@
     background-color: $secondary;
 
     div {
-        width: $base-width;
+        width: $large-screens-width;
         margin: auto;
         display: flex;
 
@@ -26,8 +26,9 @@
         }
 
         .offers-div {
-display: flex;
-align-items: center;
+            display: flex;
+            align-items: center;
+
             span {
                 margin: 0 8px;
                 font-weight: normal;
@@ -64,7 +65,7 @@ align-items: center;
     background-color: white;
 
     div {
-        width: $base-width;
+        width: $large-screens-width;
         margin: auto;
         display: flex;
         position: relative;
@@ -109,11 +110,17 @@ align-items: center;
                 position: relative;
 
                 span.cart-number {
+                    font-size: small;
                     background-color: $secondary;
+                    width: 17px;
+                    height: 17px;
+                    line-height: 17px;
+                    text-align: center;
                     border-radius: 50%;
                     padding: 1px;
                     position: absolute;
-                    left: 20px;
+                    bottom: 13px;
+                    left: 18px;
                 }
             }
         }
@@ -128,9 +135,9 @@ align-items: center;
     div {
         display: flex;
         justify-content: space-between;
-        width: $base-width;
+        width: $large-screens-width;
         margin: auto;
-padding: 1% 0;
+        padding: 1% 0;
 
         .third-section-p {
             color: white;
@@ -153,11 +160,39 @@ padding: 1% 0;
 .fourth-nav-section {
 
     div {
-        width: $base-width;
+        width: $large-screens-width;
         margin: 1.5% auto;
 
         .fourth-section-p {
             color: black;
         }
+    }
+}
+
+
+@media (max-width: 1270px) {
+
+    // First section in Navbar
+    .first-nav-section div {
+        width: $medium-screens-width;
+
+        .offers-div {
+            display: none;
+        }
+    }
+
+    // Second section in Navbar
+    .second-nav-section div {
+        width: $medium-screens-width;
+    }
+
+    // Third section in Navbar
+    .third-nav-section div {
+        width: $medium-screens-width;
+    }
+
+    // Fourth section in Navbar
+    .fourth-nav-section div {
+        width: $medium-screens-width;
     }
 }
