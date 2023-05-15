@@ -26,7 +26,8 @@
         }
 
         .offers-div {
-
+display: flex;
+align-items: center;
             span {
                 margin: 0 8px;
                 font-weight: normal;
@@ -128,10 +129,16 @@
         justify-content: space-between;
         width: $base-width;
         margin: auto;
+padding: 1% 0;
 
         .third-section-p {
             color: white;
             text-decoration: none;
+            height: 100%;
+
+            p {
+                margin-bottom: 0;
+            }
         }
 
         .offers-p {

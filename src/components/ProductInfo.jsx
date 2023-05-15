@@ -10,8 +10,8 @@ function ProductInfo(props) {
         props.quantity > 0 ? props.setQuantity(props.quantity - 1) : props.setQuantity(0)
     }
 
-    return <section>
-        <section className="clothes-information">
+    return <section className="product-info-section">
+        <section>
             <img src="/images/reebok.png" alt="brand logo" />
             <p>Reebok black t-shirt lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
             <p>Men</p>

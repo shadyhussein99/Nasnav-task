@@ -17,18 +17,24 @@ function App() {
 
   return (
     <>
-      <Navbar 
+      <Navbar
         cartNumber={cartNumber}
         setShowingCart={setShowingCart}
       />
-      <ProductImages />
-      <ProductInfo 
-        quantity={quantity}
-        setQuantity={setQuantity}
-        addToCartClick={addToCartClick}
-      />
+      <section className="row product-section">          {/* Using Bootstrap Grid System */}
+        <section className="col-lg-6">
+          <ProductImages />
+        </section>
+        <section className="col-lg-6">
+          <ProductInfo
+            quantity={quantity}
+            setQuantity={setQuantity}
+            addToCartClick={addToCartClick}
+          />
+        </section>
+      </section>
       <SimilarProductsSection />
-      {showingCart && <MyCart 
+      {showingCart && <MyCart
         cartNumber={cartNumber}
         setCartNumber={setCartNumber}
         setShowingCart={setShowingCart}

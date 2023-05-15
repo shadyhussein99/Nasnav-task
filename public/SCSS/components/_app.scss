@@ -1,0 +1,8 @@
+// variables
+@use "../variables" as *;
+
+
+.product-section {
+    width: $base-width;
+    margin: 5% auto;
+}

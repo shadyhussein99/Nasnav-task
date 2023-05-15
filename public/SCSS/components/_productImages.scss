@@ -1,0 +1,27 @@
+// variables
+@use "../variables" as *;
+
+.product-images-section {
+    margin: auto;
+
+    .image-div {
+        display: flex;
+        justify-content: center;
+
+        img {
+            width: 80%;
+            margin-bottom: 4%;           
+        }
+    }
+
+    .swiper-slide {
+        display: flex;
+        justify-content: center;
+
+        .swiper-img {
+            width: 70%;
+        }
+
+    }
+
+}

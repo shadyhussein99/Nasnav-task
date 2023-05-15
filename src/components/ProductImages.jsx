@@ -13,24 +13,28 @@ function ProductImages() {
 
     }
 
-    return <section>
-        <img src={`../src/images/${mainImage}.PNG`} alt="product image" />
+    return <section className="product-images-section">
+        <div className="image-div">
+            <img className="main-image" src={`../src/images/${mainImage}.PNG`} alt="product image" />
+        </div>
 
-        <Swiper
-            modules={[Navigation, Autoplay, A11y]}
-            spaceBetween={40}
-            slidesPerView={3}
-            navigation
-            autoplay={{
-                delay: 2000,
-            }}
-        >
-            {mainProductImages.map((value, index) => {
-                return <SwiperSlide key={index} onClick={() => handleClick(index)}>
-                    <img src={`../src/images/${value}.PNG`} alt="product image" />
-                </SwiperSlide>
-            })}
-        </Swiper>
+
+            <Swiper
+                modules={[Navigation, Autoplay, A11y]}
+                spaceBetween={10}
+                slidesPerView={4}
+                navigation
+                autoplay={{
+                    delay: 2000,
+                }}
+            >
+                {mainProductImages.map((value, index) => {
+                    return <SwiperSlide className="swiper-slide" key={index} onClick={() => handleClick(index)}>
+                        <img className="swiper-img" src={`../src/images/${value}.PNG`} alt="product image" />
+                    </SwiperSlide>
+                })}
+            </Swiper>
+
     </section>
 }
 
