@@ -14,9 +14,10 @@ function ProductImages() {
     }
 
     return <section className="product-images-section">
-        <div className="image-div">
-            <img className="main-image" src={`../src/images/${mainImage}.PNG`} alt="product image" />
-        </div>
+        <section>
+            <div className="image-div">
+                <img className="main-image" src={`../src/images/${mainImage}.PNG`} alt="product image" />
+            </div>
 
             <Swiper
                 modules={[Navigation, Autoplay, A11y]}
@@ -33,7 +34,7 @@ function ProductImages() {
                     </SwiperSlide>
                 })}
             </Swiper>
-
+        </section>
     </section>
 }
 

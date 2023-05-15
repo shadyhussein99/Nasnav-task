@@ -17,6 +17,12 @@ function SimilarProductsSection() {
             spaceBetween={10}
             breakpoints={{
                 0: {
+                    slidesPerView: 1,
+                },
+                550: {
+                    slidesPerView: 2,
+                },
+                900: {
                     slidesPerView: 3,
                 },
                 1270: {

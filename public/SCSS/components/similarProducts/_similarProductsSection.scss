@@ -2,7 +2,7 @@
 @import '../../_variables.scss';
 
 .similar-products-section {
-    width: $large-screens-width;
+    width: $x-large-screens-width;
     margin: 0 auto 50px;
 
     h2 {
@@ -23,6 +23,13 @@
 
 
 @media (max-width: 1270px) {
+    .similar-products-section {
+        width: $large-screens-width;
+    }
+}
+
+
+@media (max-width: 900px) {
     .similar-products-section {
         width: $medium-screens-width;
     }

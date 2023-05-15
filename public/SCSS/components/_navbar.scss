@@ -7,7 +7,7 @@
     background-color: $secondary;
 
     div {
-        width: $large-screens-width;
+        width: $x-large-screens-width;
         margin: auto;
         display: flex;
 
@@ -65,7 +65,7 @@
     background-color: white;
 
     div {
-        width: $large-screens-width;
+        width: $x-large-screens-width;
         margin: auto;
         display: flex;
         position: relative;
@@ -135,7 +135,7 @@
     div {
         display: flex;
         justify-content: space-between;
-        width: $large-screens-width;
+        width: $x-large-screens-width;
         margin: auto;
         padding: 1% 0;
 
@@ -160,7 +160,7 @@
 .fourth-nav-section {
 
     div {
-        width: $large-screens-width;
+        width: $x-large-screens-width;
         margin: 1.5% auto;
 
         .fourth-section-p {
@@ -174,7 +174,7 @@
 
     // First section in Navbar
     .first-nav-section div {
-        width: $medium-screens-width;
+        width: $large-screens-width;
 
         .offers-div {
             display: none;
@@ -183,7 +183,64 @@
 
     // Second section in Navbar
     .second-nav-section div {
+        width: $large-screens-width;
+    }
+
+    // Third section in Navbar
+    .third-nav-section div {
+        width: $large-screens-width;
+    }
+
+    // Fourth section in Navbar
+    .fourth-nav-section div {
+        width: $large-screens-width;
+    }
+}
+
+
+@media (max-width: 900px) {
+
+    // First section in Navbar
+    .first-nav-section div {
         width: $medium-screens-width;
+
+        .services-div {
+
+            span {
+                display: none;
+            }
+
+            i {
+                font-size: x-large;
+                margin-right: 20px;
+            }
+        }
+    }
+
+    // Second section in Navbar
+    .second-nav-section div {
+        width: $medium-screens-width;
+
+        input {
+           width: 100%;
+           padding-left: 0;
+        }
+
+        i {
+            display: none;
+        }
+
+        .user-info-div .user-info-link {
+
+            .user-info-description {
+                display: none;
+            }
+
+            svg {
+                font-size: x-large;
+                margin-right: 20px;
+            }
+        }
     }
 
     // Third section in Navbar

@@ -44,7 +44,7 @@ function Navbar(props) {
         <section className="second-nav-section">
             <div>
                 <input onChange={(e) => { setInputChange(e.target.value) }} value={inputChange} placeholder="Search" type="text" />
-                <i class="fa-solid fa-magnifying-glass"></i>
+                <i className="fa-solid fa-magnifying-glass"></i>
                 <img src="/images/reebok.png" alt="brand logo" />
                 <div className="user-info-div">
                     <Link to="#" onClick={showCart} className="user-info-link cart-p">

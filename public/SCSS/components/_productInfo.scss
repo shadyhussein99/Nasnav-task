@@ -147,7 +147,7 @@
             }
         }
 
-        .purchase-div {           
+        .purchase-div {
 
             button {
                 font-weight: 600;
@@ -181,13 +181,50 @@
 
 @media (max-width: 1270px) {
     .product-info-section {
-        
+
+        .clothes-information {
+
+            .description-p {
+                width: 100%;
+            }
+        }
+
         .clothes-purchase {
 
             .purchase-div {
-               
+
                 button {
                     width: 40%;
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 991px) {
+    .product-info-section {
+        margin-top: 70px;
+        text-align: center;
+
+        .clothes-size {
+
+            .sizes-div {
+                justify-content: center;
+            }
+        }
+
+        .clothes-purchase {
+          
+            .quantity-div {
+                margin: 0 auto 30px;
+            }
+
+            .purchase-div {
+
+                button {
+                    width: 35%;
+                    
                 }
             }
         }

@@ -3,12 +3,19 @@
 
 
 .product-section {
-    width: $large-screens-width;
+    width: $x-large-screens-width;
     margin: 5% auto;
 }
 
 
 @media (max-width: 1270px) {
+    .product-section {
+        width: $large-screens-width;
+    }
+}
+
+
+@media (max-width: 900px) {
     .product-section {
         width: $medium-screens-width;
     }

@@ -160,6 +160,41 @@ span {
     width: 800px;
   }
 }
+@media (max-width: 900px) {
+  .first-nav-section div {
+    width: 90%;
+  }
+  .first-nav-section div .services-div span {
+    display: none;
+  }
+  .first-nav-section div .services-div i {
+    font-size: x-large;
+    margin-right: 20px;
+  }
+  .second-nav-section div {
+    width: 90%;
+  }
+  .second-nav-section div input {
+    width: 100%;
+    padding-left: 0;
+  }
+  .second-nav-section div i {
+    display: none;
+  }
+  .second-nav-section div .user-info-div .user-info-link .user-info-description {
+    display: none;
+  }
+  .second-nav-section div .user-info-div .user-info-link svg {
+    font-size: x-large;
+    margin-right: 20px;
+  }
+  .third-nav-section div {
+    width: 90%;
+  }
+  .fourth-nav-section div {
+    width: 90%;
+  }
+}
 .product-section {
   width: 1200px;
   margin: 5% auto;
@@ -168,6 +203,11 @@ span {
 @media (max-width: 1270px) {
   .product-section {
     width: 800px;
+  }
+}
+@media (max-width: 900px) {
+  .product-section {
+    width: 90%;
   }
 }
 .product-images-section {
@@ -191,6 +231,11 @@ span {
   width: 70%;
 }
 
+@media (max-width: 991px) {
+  .product-images-section {
+    width: 70%;
+  }
+}
 .product-info-section {
   margin: auto;
 }
@@ -323,8 +368,26 @@ span {
 }
 
 @media (max-width: 1270px) {
+  .product-info-section .clothes-information .description-p {
+    width: 100%;
+  }
   .product-info-section .clothes-purchase .purchase-div button {
     width: 40%;
+  }
+}
+@media (max-width: 991px) {
+  .product-info-section {
+    margin-top: 70px;
+    text-align: center;
+  }
+  .product-info-section .clothes-size .sizes-div {
+    justify-content: center;
+  }
+  .product-info-section .clothes-purchase .quantity-div {
+    margin: 0 auto 30px;
+  }
+  .product-info-section .clothes-purchase .purchase-div button {
+    width: 35%;
   }
 }
 .card-section {
@@ -386,6 +449,11 @@ span {
 @media (max-width: 1270px) {
   .similar-products-section {
     width: 800px;
+  }
+}
+@media (max-width: 900px) {
+  .similar-products-section {
+    width: 90%;
   }
 }
 main {
