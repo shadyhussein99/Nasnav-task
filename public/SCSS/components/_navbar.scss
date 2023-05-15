@@ -17,7 +17,11 @@
 
             .logo-h1 {
                 font-size: 2rem;
-                margin: 5% 0 5% 3%;
+                margin: 2% 0 2% 3%;
+            }
+
+            i {
+                cursor: pointer;
             }
         }
 
@@ -25,6 +29,7 @@
 
             span {
                 margin: 0 8px;
+                font-weight: normal;
             }
 
             .offers-link {
@@ -38,8 +43,10 @@
             display: flex;
             justify-content: end;
 
-            p {
+            .services-link {
+                color: black;
                 margin-left: 30px;
+                text-decoration: none;
 
                 span {
                     margin-left: 5px;
@@ -59,12 +66,20 @@
         width: $base-width;
         margin: auto;
         display: flex;
+        position: relative;
 
         input {
+            font-size: large;
             width: 60%;
             border-radius: 25px;
-            padding-left: 2%;
+            padding-left: 5%;
             margin: 15px 0;
+        }
+
+        i {
+            position: absolute;
+            top: 32px;
+            left: 20px;
         }
 
         img {
@@ -78,18 +93,20 @@
         .user-info-div {
             justify-content: end;
 
-            p {
+            .user-info-link {
+                color: black;
                 margin-left: 30px;
+                text-decoration: none;
 
                 .user-info-description {
                     margin-left: 5px;
                 }
             }
 
-            p.cart-p {
+            .user-info-link.cart-p {
                 position: relative;
 
-                span.cart-number{
+                span.cart-number {
                     background-color: $secondary;
                     border-radius: 50%;
                     padding: 1px;
@@ -97,6 +114,42 @@
                     left: 20px;
                 }
             }
+        }
+    }
+}
+
+
+// Third section in Navbar
+.third-nav-section {
+    background-color: black;
+
+    div {
+        display: flex;
+        justify-content: space-between;
+        width: $base-width;
+        margin: auto;
+
+        .third-section-p {
+            color: white;
+            text-decoration: none;
+        }
+
+        .offers-p {
+            color: red;
+        }
+    }
+}
+
+
+// Fourth section in Navbar
+.fourth-nav-section {
+
+    div {
+        width: $base-width;
+        margin: 1.5% auto;
+
+        .fourth-section-p {
+            color: black;
         }
     }
 }

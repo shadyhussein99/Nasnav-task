@@ -2,6 +2,14 @@ body {
   margin: 0;
 }
 
+p {
+  font-weight: 600;
+}
+
+span {
+  font-weight: 600;
+}
+
 .first-nav-section {
   background-color: #fff100;
 }
@@ -16,10 +24,14 @@ body {
 }
 .first-nav-section div .logo-div .logo-h1 {
   font-size: 2rem;
-  margin: 5% 0 5% 3%;
+  margin: 2% 0 2% 3%;
+}
+.first-nav-section div .logo-div i {
+  cursor: pointer;
 }
 .first-nav-section div .offers-div span {
   margin: 0 8px;
+  font-weight: normal;
 }
 .first-nav-section div .offers-div .offers-link {
   margin-right: 8px;
@@ -30,10 +42,12 @@ body {
   display: flex;
   justify-content: end;
 }
-.first-nav-section div .services-div p {
+.first-nav-section div .services-div .services-link {
+  color: black;
   margin-left: 30px;
+  text-decoration: none;
 }
-.first-nav-section div .services-div p span {
+.first-nav-section div .services-div .services-link span {
   margin-left: 5px;
 }
 
@@ -44,12 +58,19 @@ body {
   width: 1200px;
   margin: auto;
   display: flex;
+  position: relative;
 }
 .second-nav-section div input {
+  font-size: large;
   width: 60%;
   border-radius: 25px;
-  padding-left: 2%;
+  padding-left: 5%;
   margin: 15px 0;
+}
+.second-nav-section div i {
+  position: absolute;
+  top: 32px;
+  left: 20px;
 }
 .second-nav-section div img {
   margin: 10px 0;
@@ -62,19 +83,46 @@ body {
 .second-nav-section div .user-info-div {
   justify-content: end;
 }
-.second-nav-section div .user-info-div p {
+.second-nav-section div .user-info-div .user-info-link {
+  color: black;
   margin-left: 30px;
+  text-decoration: none;
 }
-.second-nav-section div .user-info-div p .user-info-description {
+.second-nav-section div .user-info-div .user-info-link .user-info-description {
   margin-left: 5px;
 }
-.second-nav-section div .user-info-div p.cart-p {
+.second-nav-section div .user-info-div .user-info-link.cart-p {
   position: relative;
 }
-.second-nav-section div .user-info-div p.cart-p span.cart-number {
+.second-nav-section div .user-info-div .user-info-link.cart-p span.cart-number {
   background-color: #fff100;
   border-radius: 50%;
   padding: 1px;
   position: absolute;
   left: 20px;
+}
+
+.third-nav-section {
+  background-color: black;
+}
+.third-nav-section div {
+  display: flex;
+  justify-content: space-between;
+  width: 1200px;
+  margin: auto;
+}
+.third-nav-section div .third-section-p {
+  color: white;
+  text-decoration: none;
+}
+.third-nav-section div .offers-p {
+  color: red;
+}
+
+.fourth-nav-section div {
+  width: 1200px;
+  margin: 1.5% auto;
+}
+.fourth-nav-section div .fourth-section-p {
+  color: black;
 }/*# sourceMappingURL=main.css.map */
