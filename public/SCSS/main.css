@@ -162,4 +162,31 @@ span {
 
 .product-info-section {
   margin: auto;
+}
+.product-info-section .clothes-information img {
+  width: 12%;
+  margin-bottom: 2%;
+}
+.product-info-section .clothes-information .description-p {
+  width: 50%;
+  margin-bottom: 1%;
+}
+.product-info-section .clothes-information .gender-p {
+  color: gray;
+  font-size: small;
+}
+.product-info-section .clothes-information .rate-div {
+  margin-bottom: 3%;
+}
+.product-info-section .clothes-information .rate-div span {
+  margin-right: 3%;
+}
+.product-info-section .clothes-information .rate-div .icon-span {
+  color: orange;
+}
+.product-info-section .clothes-information .rate-div .rates-number {
+  color: gray;
+}
+.product-info-section .clothes-information .cost-div .discount-cost {
+  color: #542e90;
 }/*# sourceMappingURL=main.css.map */

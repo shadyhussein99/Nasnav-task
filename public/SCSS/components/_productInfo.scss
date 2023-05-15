@@ -3,4 +3,45 @@
 
 .product-info-section {
     margin: auto;
+
+    .clothes-information {
+
+        img {
+            width: 12%;
+            margin-bottom: 2%;
+        }
+
+        .description-p {
+            width: 50%;
+            margin-bottom: 1%;
+        }
+
+        .gender-p {
+            color: gray;
+            font-size: small;
+        }
+
+        .rate-div {
+            margin-bottom: 3%;
+
+            span {
+                margin-right: 3%;
+            }
+
+            .icon-span {
+                color: orange;
+            }
+
+            .rates-number {
+                color: gray;
+            }
+        }
+
+        .cost-div {
+
+            .discount-cost {
+                color: $primary;
+            }
+        }
+    }
 }

@@ -11,12 +11,12 @@ function ProductInfo(props) {
     }
 
     return <section className="product-info-section">
-        <section>
+        <section className="clothes-information">
             <img src="/images/reebok.png" alt="brand logo" />
-            <p>Reebok black t-shirt lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
-            <p>Men</p>
-            <div>
-                <span>
+            <p className="description-p">Reebok black t-shirt lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+            <p className="gender-p">Men</p>
+            <div className="rate-div">
+                <span className="icon-span">
                     <i className="fa-solid fa-star"></i>
                     <i className="fa-solid fa-star"></i>
                     <i className="fa-solid fa-star"></i>
@@ -24,11 +24,11 @@ function ProductInfo(props) {
                     <i className="fa-regular fa-star"></i>
                 </span>
                 <span>4.9 of 5</span>
-                <span>22 Rates</span>
+                <span className="rates-number">22 Rates</span>
             </div>
-            <div>
-                <span>9,999 <span>LE</span></span>
-                <span>9,999 LE</span>
+            <div className="cost-div">
+                <span className="discount-cost">9,999 <span>LE</span></span>
+                <span className="actual-cost">9,999 LE</span>
                 <span>30% Off</span>
             </div>
         </section>
