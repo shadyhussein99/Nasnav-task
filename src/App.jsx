@@ -37,7 +37,7 @@ function App() {
           />
         </section>
       </section>
-      
+
       <SimilarProductsSection />
 
       <Suspense fallback={<div>Loading...</div>}>  {/* Lazy Component */}
