@@ -24,6 +24,7 @@ function App() {
         cartNumber={cartNumber}
         setShowingCart={setShowingCart}
       />
+
       <section className="row product-section">      {/* Using Bootstrap Grid System */}
         <section className="col-lg-6">
           <ProductImages />
@@ -36,8 +37,10 @@ function App() {
           />
         </section>
       </section>
+      
       <SimilarProductsSection />
-      <Suspense fallback={<div>Loading...</div>}>
+
+      <Suspense fallback={<div>Loading...</div>}>  {/* Lazy Component */}
         {showingCart &&
           <LazyComponent
             cartNumber={cartNumber}
