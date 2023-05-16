@@ -1,9 +1,12 @@
 import { useState } from "react"
+import { lazy, Suspense } from "react"
 import Navbar from "./components/Navbar"
 import ProductImages from "./components/ProductImages"
 import ProductInfo from "./components/ProductInfo"
 import SimilarProductsSection from "./components/similarProducts/SimilarProductsSection"
 import MyCart from "./components/MyCart"
+
+const LazyComponent = lazy(() => import("./components/MyCart"))
 
 function App() {
 
@@ -34,11 +37,15 @@ function App() {
         </section>
       </section>
       <SimilarProductsSection />
-      {showingCart && <MyCart
-        cartNumber={cartNumber}
-        setCartNumber={setCartNumber}
-        setShowingCart={setShowingCart}
-      />}
+      <Suspense fallback={<div>Loading...</div>}>
+        {showingCart &&
+          <LazyComponent
+            cartNumber={cartNumber}
+            setCartNumber={setCartNumber}
+            setShowingCart={setShowingCart}
+          />
+        }
+      </Suspense>
     </>
   )
 }
